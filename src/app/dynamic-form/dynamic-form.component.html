@@ -1,0 +1,33 @@
+<p>dynamic-form works!</p>
+
+<!-- 1 Dynamic Template Driven Form Mehtod -->
+<!-- <form (ngSubmit)="submitForm()">
+	<div *ngFor="let username of usernames; let i = index">
+		<input
+			type="text"
+			[(ngModel)]="usernames[i]"
+			name="username-{{ i }}"
+			placeholder="Enter username"
+		/>
+
+		<button (click)="removeUsername(i)">Remove</button>
+	</div>
+	<button (click)="addUsername()">Add Username</button>
+
+	<button type="submit">submit</button>
+</form> -->
+
+<!-- 2 Dynamic Reactive Form Method -->
+
+<form [formGroup]="dynamicForm" (ngSubmit)="submitForm()">
+  <div formArrayName="usernames">
+    <div *ngFor="let username of usernames.controls; let i = index">
+      <input [formControlName]="i" placeholder="Enter The Username" />
+
+      <button type="button" (click)="removeUsername(i)">Remove</button>
+    </div>
+  </div>
+
+  <button type="button" (click)="addUsername()">Add Username</button>
+  <button type="submit">Submit</button>
+</form>
