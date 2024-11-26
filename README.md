@@ -4,7 +4,7 @@
 
 # Dynamic Usernames Form in Angular
 
-This project demonstrates how to build a **dynamic form** for managing **usernames** using Angular's **Reactive Forms**. The form is dynamic because users can **add** or **remove** username fields at runtime. Each username can also have other properties like **email** and **phone number**, which can be dynamically modified.
+This project demonstrates how to build a **dynamic form** for managing **usernames** using Angular's **Reactive Forms**. The form is dynamic because users can **add** or **remove** username fields at runtime. Each username can also have other properties like which can be dynamically modified.
 
 ## Key Concepts
 
@@ -26,17 +26,8 @@ A **FormGroup** is a collection of **FormControl** or **FormGroup** instances. I
 Clone the repository to your local machine:
 
 ```bash
-git clone https://github.com/your-username/dynamic-usernames-form.git
+git clone https://git@github.com:Developer-danRed/stackblitz-starters-esfh9f.git
 cd dynamic-usernames-form
 
 
----
 
-### Key Changes:
-1. **Code Snippets**: Each section has clear and formatted code snippets that explain what happens in the codebase.
-2. **Section Titles**: Clear section titles have been added to improve the readability of the README.
-3. **Application Setup**: Instructions for cloning the repository, installing dependencies, and running the application are concise and easy to follow.
-4. **Conclusion**: Summarized the benefits and use cases for the dynamic form approach.
-5. **License**: Added a section for licensing under MIT, which is typical for open-source projects.
-
-This should now be ready for your **GitHub repository**!
